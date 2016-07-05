@@ -1,5 +1,0 @@
-numpy==1.11.1
-protobuf==3.0.0b2.post2
-six==1.10.0
-tensorflow==0.9.0
-vboxapi==1.0
