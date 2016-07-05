@@ -4,10 +4,6 @@
 import tensorflow as tf
 import numpy as np
 
-#plotting libs
-
-from matplotlib import pyplot as plt
-from PIL import Image
 
 #load data
 
