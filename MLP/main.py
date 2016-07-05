@@ -96,6 +96,7 @@ def MLP():
             return tf.matmul(h1, w_logit) + b_logit
 
 
+
         # logit = predictions, we make prediction and calculate the error
 
         logits = model(tf_train_dataset)  # make a prediction
