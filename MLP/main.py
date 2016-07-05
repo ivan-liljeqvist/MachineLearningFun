@@ -26,23 +26,6 @@ def printSetInfo():
     print(mnist.validation.labels.shape)
 
 
-def runTFTest():
-    hello = tf.constant('Hello, TensorFlow!')
-    sess = tf.Session()
-    print(sess.run(hello))
-
-    a = tf.constant(10)
-    b = tf.constant(32)
-    print(sess.run(a + b))
-
-def plotImage(index):
-    image2d = np.reshape(mnist.train.images[index],[28,28])
-    plt.imshow(image2d,cmap="Greys_r")
-    plt.colorbar()
-    plt.title('plot for sin(x)+sin(y)')
-    plt.show()
-
-
 # Helps to understand how accurate something is
 def accuracy(predictions,labels):
     return (100.0 * np.sum(np.argmax(predictions,1)==np.argmax(labels,1))/predictions.shape[0]);
